@@ -51,6 +51,10 @@ resource "aws_security_group" "test-cluster" {
   }
 }
 
+locals {
+  workstation-external-cidr = "0.0.0.0/16"
+}
+
 resource "aws_security_group_rule" "test-cluster-ingress-workstation-https" {
   cidr_blocks       = [local.workstation-external-cidr]
   description       = "Allow workstation to communicate with the cluster API Server"
