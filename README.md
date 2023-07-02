@@ -1,3 +1,4 @@
+# Original code source: from taewdy: https://github.com/hashicorp/terraform-provider-aws/blob/main/examples/eks-getting-started/vpc.tf
 # eks_deployment_with_tfm is the code to provision an eks clutser in US-east-2 region with 2 node-groups.
 
 # Now let's talk about the output content aut the end of the deployment. 
